@@ -32,9 +32,6 @@ public class DefaultAirportService implements AirportService {
         while (true) {
             System.out.println(ENTER_THE_LINE);
             String input = new Scanner(System.in).nextLine();
-            if (input.isEmpty()) {
-                continue;
-            }
             if (input.equalsIgnoreCase(EXIT_MESSAGE)) {
                 System.exit(ExitStatus.SUCCESS.count);
             }
